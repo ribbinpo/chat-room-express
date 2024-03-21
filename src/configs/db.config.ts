@@ -24,4 +24,4 @@ async function closeMongoDBConnection(client: MongoClient) {
   }
 }
 
-export default { connectToMongoDB, closeMongoDBConnection };
+export { connectToMongoDB, closeMongoDBConnection };
