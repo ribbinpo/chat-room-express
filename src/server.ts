@@ -6,7 +6,7 @@ import "dotenv/config";
 import router from "./routes";
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
