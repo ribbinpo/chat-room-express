@@ -2,9 +2,9 @@ import { ObjectId } from "mongodb";
 import bcrypt from "bcrypt";
 import "dotenv/config";
 
-import { connectToMongoDB, closeMongoDBConnection } from "../configs/db.config";
+import { connectToMongoDB, closeMongoDBConnection } from "@/configs/db.config";
 import { randomName, randomPass } from "./random.service";
-import { RoomModel } from "../models/room.model";
+import { RoomModel } from "@/models/room.model";
 
 const getRoomById = async (id: ObjectId) => {
   const { client, db } = await connectToMongoDB();

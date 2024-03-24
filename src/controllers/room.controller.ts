@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { validationResult } from "express-validator";
 
-import roomService from "../services/room.service";
+import roomService from "@/services/room.service";
 import { ObjectId } from "mongodb";
 
 const getRoomById = async (req: Request, res: Response) => {

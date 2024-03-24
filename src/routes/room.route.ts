@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { body, param, query } from "express-validator";
+import { body, param } from "express-validator";
 
-import roomController from "../controllers/room.controller";
+import roomController from "@/controllers/room.controller";
 
 const router = Router();
 
