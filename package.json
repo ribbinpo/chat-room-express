@@ -1,11 +1,11 @@
 {
-  "name": "node-express-boilderplate",
+  "name": "chat-room-express",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.ts",
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/src/server.js",
     "dev": "nodemon",
     "test": "jest",
     "test:watch": "jest --watch"
