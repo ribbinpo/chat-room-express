@@ -131,7 +131,6 @@ describe("Room Service Unit Tests", () => {
       const bcryptCompare = jest.fn().mockResolvedValue(true);
       (bcrypt.compare as jest.Mock) = bcryptCompare;
       const result = await roomService.joinRoom(mockId, "password");
-      console.log(result);
       expect(result?._id).toEqual(mockRoom._id);
       expect(result?.name).toEqual("player2");
     });
